@@ -1,4 +1,4 @@
-#check_vplex.py
+# check_vplex.py
 
 This is a Nagios monitoring script for DELL EMC vplex. It calls the vplex RESTfull API and check if every moduls are OK. This plugin have been tested with a version 6.1 of vplex and python 3.6.8.
 
@@ -71,7 +71,7 @@ This module checking :
 
 <http://daminoux.fr/check-vplex>
 
-###requirements:
+### requirements:
 
     json
     requests
