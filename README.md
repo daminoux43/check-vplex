@@ -3,11 +3,11 @@
 This is a Nagios monitoring script for DELL EMC vplex. It calls the vplex RESTfull API and check if every moduls are OK. This plugin have been tested with a version 6.1 of vplex and python 3.6.8.
 
 
-#### usage:
+## usage:
 
 check_vplex.py [-h] -H HOSTADDRESS -u USER -p PASSWORD -m { configuration, back-end, front-end, cache, consistency-group, wan, hardware, cluster_witness, vpn io-aborts}
 
-####  arguments
+##  arguments
  * -h, --help
 	show this help message and exit
  * -H HOSTNAME, --hostname HOSTNAME
@@ -19,10 +19,10 @@ check_vplex.py [-h] -H HOSTADDRESS -u USER -p PASSWORD -m { configuration, back-
  * -m, --module
  	module checking  among   configuration or back-end or front-end or cache or consistency-group or wan or  hardware or cluster_witness or vpn io-aborts
 
-#### module
+## module
 This module checking :
 
-##### configuration:
+### configuration:
    - Checking VPlexCli connectivity to directors
    - Checking Directors Commission
    - Checking Directors Communication Status
@@ -34,7 +34,7 @@ This module checking :
    - Checking Meta Data Backup
    - Checking Meta Data Slot Usage
 
-##### back-end:
+### back-end:
    - Checking Unreachable Storage Volumes
    - Checking Degraded Storage Volumes
    - Checking Unhealthy Virtual Volumes
@@ -43,42 +43,42 @@ This module checking :
    - Validating LUN limit per IT-Nexus
    - Checking Unhealthy IT Nexuses
 
-##### front-end:
+### front-end:
    - Checking Front End HA
    - Checking Front End Path
 
-##### consistency-group:
+### consistency-group:
    - Consistency Group Health
    - Consistency Group Setting
 
-##### wan:
+### wan:
    - WAN Configuration
 
-##### hardware:
+### hardware:
    - Checking Director Hardware
    - Checking SSD Hardware
 
-##### cluster_witness:
+### cluster_witness:
    - Checking Cluster Witness
 
-##### vpn:
+### vpn:
    - VPN Status
 
-##### io-aborts:
+### io-aborts:
    - Check if io aborts
 
-### web site
+## web site
 
 <http://daminoux.fr/check-vplex>
 
-### requirements:
+## requirements:
 
     json
     requests
     argparse
 
 
-### Creating a user
+## Creating a user
 For reason of security, we recommend not use administrator account and create a dedied user for monitoring.
 
 © 2020 Damien ARNAUD published under GPLv3 license

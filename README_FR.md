@@ -3,11 +3,11 @@
 Ce script python est un plugin nagios pour monitorer un vplex de DELL EMC. Il effectue les vérification en interrogeant l'API RESTfull du vplex. Ce plugin a été testé avec une version 6.1 de vplex et python 3.6.8.
 
 
-#### usage:
+## usage:
 
 check_vplex.py [-h] -H HOSTADDRESS -u USER -p PASSWORD -m { configuration, back-end, front-end, cache, consistency-group, wan, hardware, cluster_witness, vpn io-aborts}
 
-#### arguments
+## arguments
  * -h, --help
 	Affiche ce message d'aide
  * -H HOSTNAME, --hostname HOSTNAME
@@ -19,10 +19,10 @@ check_vplex.py [-h] -H HOSTADDRESS -u USER -p PASSWORD -m { configuration, back-
  * -m, --module
  	module à vérifier parmi configuration ou back-end ou front-end ou cache ou consistency-group ou wan ou  hardware or cluster_witness or vpn io-aborts
 
-#### module
+## module
 Les modules verifient les status ci-desssous:
 
-##### configuration:
+### configuration:
    - Checking VPlexCli connectivity to directors
    - Checking Directors Commission
    - Checking Directors Communication Status
@@ -34,7 +34,7 @@ Les modules verifient les status ci-desssous:
    - Checking Meta Data Backup
    - Checking Meta Data Slot Usage
 
-##### back-end:
+### back-end:
    - Checking Unreachable Storage Volumes
    - Checking Degraded Storage Volumes
    - Checking Unhealthy Virtual Volumes
@@ -43,41 +43,41 @@ Les modules verifient les status ci-desssous:
    - Validating LUN limit per IT-Nexus
    - Checking Unhealthy IT Nexuses
 
-##### front-end:
+### front-end:
    - Checking Front End HA
    - Checking Front End Path
 
-##### consistency-group:
+### consistency-group:
    - Consistency Group Health
    - Consistency Group Setting
 
-##### wan:
+### wan:
    - WAN Configuration
 
-##### hardware:
+### hardware:
    - Checking Director Hardware
    - Checking SSD Hardware
 
-##### cluster_witness:
+### cluster_witness:
    - Checking Cluster Witness
-##### vpn:
+### vpn:
    - VPN Status
 
-##### io-aborts:
+### io-aborts:
    - Check if io aborts
 
-### site web
+## site web
 
 <http://daminoux.fr/check-vplex>
 
-### Dépendence de librairie:
+## Dépendence de librairie:
 
     json
     requests
     argparse
 
 
-### Création d'un utlisateur
+## Création d'un utlisateur
 Pour des raisons de sécurité, il est connseillé de ne pas utiliser le compte administrateur et de créer un compte sans aucun droit particulier.
 
 © 2020 Damien ARNAUD published sous GPLv3 license
