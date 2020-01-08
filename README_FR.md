@@ -1,6 +1,6 @@
 # check_vplex.py
 
-Ce script python est un plugin nagios pour monitorer un vplex de DELL EMC. Il effectue les vérification en interrogeant l'API RESTfull du vplex. Ce plugin a été testé avec une version 6.1 de vplex et python 3.6.8.
+Ce script python est un plugin nagios pour monitorer un vplex de DELL EMC. Il effectue les vérifications en interrogeant l'API RESTfull du vplex. Ce plugin a été testé avec une version 6.1 de vplex et python 3.6.8.
 
 
 ## usage:
@@ -97,4 +97,4 @@ Et maintenant vous devriez pouvoir utiliser check_vplex.py avec l'utilisateur da
 
 
 
-© 2020 Damien ARNAUD published sous GPLv3 license
+© 2020 Damien ARNAUD publié sous GPLv3 license

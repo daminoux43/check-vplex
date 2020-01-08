@@ -79,9 +79,9 @@ This module checking :
 
 
 ## Creating a user
-For reason of security, we recommend to not use administrator account and create a dedied user for monitoring.
+For reasons of security, we recommend to not use a administrator account and create a dedied user for monitoring.
 
-For create a user daminoux on the vplex we must :
+For create a user daminoux on the vplex we must:
 
     - connect on the vplex in ssh with user admin
     - launch vplexcli with the command vplexcli
