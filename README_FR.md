@@ -80,4 +80,21 @@ Les modules verifient les status ci-desssous:
 ## Création d'un utlisateur
 Pour des raisons de sécurité, il est connseillé de ne pas utiliser le compte administrateur et de créer un compte sans aucun droit particulier.
 
+Pour la création d'un utilisateur ( daminoux ) sur le vplex il faut:
+
+    - se connecter sur le vplex en ssh avec l'utilisateur admin
+    - lancer le vplexcli avec la command vplexcli
+    - taper la commande: user add daminoux
+    - taper un mot de passe
+    - retaper un mot de passe
+    - ensuite se connecter en ssh avec l'utilisateur daminoux
+    - taper le mot de passe que vous venez de mettre
+    - taper un nouveau mot de passe
+    - retaper un nouveau mot de passe
+
+Et maintenant vous devriez pouvoir utiliser check_vplex.py avec l'utilisateur daminoux
+
+
+
+
 © 2020 Damien ARNAUD published sous GPLv3 license

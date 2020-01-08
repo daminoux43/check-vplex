@@ -79,6 +79,19 @@ This module checking :
 
 
 ## Creating a user
-For reason of security, we recommend not use administrator account and create a dedied user for monitoring.
+For reason of security, we recommend to not use administrator account and create a dedied user for monitoring.
+
+For create a user daminoux on the vplex we must :
+
+    - connect on the vplex in ssh with user admin
+    - launch vplexcli with the command vplexcli
+    - type the command: add user daminoux
+    - type the password
+    - type again the password
+    - logout end reconnect with the new user
+    - and retype a new password
+
+And now you you can use the script check_vplex.py with the new user.
+
 
 © 2020 Damien ARNAUD published under GPLv3 license
