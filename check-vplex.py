@@ -21,7 +21,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 __author__ = 'Damien ARNAUD'
 __contact__ = 'github@daminoux.fr'
 __license__ = 'GPLv3'
-__version__ = 0.2
+__version__ = 0.3
 __date__ = '2019-12-30'
 __updated__ = '2020-O1-04'
 
