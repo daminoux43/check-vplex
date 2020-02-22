@@ -1,6 +1,6 @@
 # check_vplex.py
 
-Ce script python est un plugin nagios pour monitorer un vplex de DELL EMC. Il effectue les vérifications en interrogeant l'API RESTfull du vplex. Ce plugin a été testé avec une version 6.1 de vplex et python 3.6.8.
+Ce script python est un plugin nagios pour monitorer un vplex de DELL EMC. Il effectue les vÃ©rifications en interrogeant l'API RESTfull du vplex. Ce plugin a Ã©tÃ© testÃ© avec une version 6.1 de vplex et python 3.6.8.
 
 
 ## usage:
@@ -11,13 +11,13 @@ check_vplex.py [-h] -H HOSTADDRESS -u USER -p PASSWORD -m { configuration, back-
  * -h, --help
 	Affiche ce message d'aide
  * -H HOSTNAME, --hostname HOSTNAME
-	addresse ip ou fqdn du vplex à monitorer.
+	addresse ip ou fqdn du vplex Ã  monitorer.
  * -u USERNAME, --username USERNAME
-	utilisateur pour se connecter à l'API du vplex
+	utilisateur pour se connecter Ã  l'API du vplex
  * -p PASSWORD, --password PASSWORD
 	Mot de passe de l'utilisateur
  * -m, --module
- 	module à vérifier parmi configuration ou back-end ou front-end ou cache ou consistency-group ou wan ou  hardware or cluster_witness or vpn io-aborts
+ 	module Ã  vÃ©rifier parmi configuration ou back-end ou front-end ou cache ou consistency-group ou wan ou  hardware or cluster_witness or vpn io-aborts
 
 ## module
 Les modules verifient les status ci-desssous:
@@ -70,31 +70,16 @@ Les modules verifient les status ci-desssous:
 
 <http://daminoux.fr/check-vplex>
 
-## Dépendence de librairie:
+## DÃ©pendence de librairie:
 
     json
     requests
     argparse
 
 
-## Création d'un utlisateur
-Pour des raisons de sécurité, il est connseillé de ne pas utiliser le compte administrateur et de créer un compte sans aucun droit particulier.
-
-Pour la création d'un utilisateur ( daminoux ) sur le vplex il faut:
-
-    - se connecter sur le vplex en ssh avec l'utilisateur admin
-    - lancer le vplexcli avec la command vplexcli
-    - taper la commande: user add daminoux
-    - taper un mot de passe
-    - retaper un mot de passe
-    - ensuite se connecter en ssh avec l'utilisateur daminoux
-    - taper le mot de passe que vous venez de mettre
-    - taper un nouveau mot de passe
-    - retaper un nouveau mot de passe
-
-Et maintenant vous devriez pouvoir utiliser check_vplex.py avec l'utilisateur daminoux
+## CrÃ©ation d'un utlisateur
+Apparement il n'est pas possible de superviser le vplex avec un utilisateur avec l'API . Vous devez utiliser le compte: service
 
 
 
-
-© 2020 Damien ARNAUD publié sous GPLv3 license
+Â© 2020 Damien ARNAUD publiÃ© sous GPLv3 license
